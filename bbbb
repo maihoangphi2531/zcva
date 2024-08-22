@@ -1,7 +1,7 @@
 
 
 local function improveFPS()
-   local decalsyeeted = true -- zxczxcsszxczxczxc
+   local decalsyeeted = true -- zxczxcsszxczxczxc333333333333
    local game = game
    local workspace = game.Workspace
    local lighting = game.Lighting
@@ -1880,7 +1880,7 @@ local function bi(aW)
             aW = e.Mobs.Crystal.Crystal
         end
     end 
-    aW = e.BOSSKandrix.Collider  -- Gán giá trị mới cho aW
+    aW = e.Mobs.BOSSKandrix.Collider  -- Gán giá trị mới cho aW
     return aW  -- Trả về giá trị của aW
  end
  
