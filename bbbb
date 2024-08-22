@@ -1,7 +1,7 @@
 
 
 local function improveFPS()
-   local decalsyeeted = true -- zxczxcsszxczxczxc
+   local decalsyeeted = true -- zxczxcsszxczxczxc2
    local game = game
    local workspace = game.Workspace
    local lighting = game.Lighting
@@ -1873,7 +1873,7 @@ local function bi(aW)
            end
        end
    end
-   if game.PlaceId == Z[10] then
+   if game.PlaceId == Y[10] then
        if H.PlayerGui.MissionObjective.MissionObjective.Label.Text == 'Destroy the Crystals!' then
            if e.MissionObjects.Crystal:FindFirstChild('HealthProperties') and
                e.MissionObjects.Crystal.HealthProperties.Health.Value ~= 0 then
@@ -2969,7 +2969,7 @@ if game.PlaceId == 13988110964 or game.PlaceId == 14400549310 then
    end)
 end
 for aA, B in pairs(Z) do
-   if game.PlaceId == B then
+   if aA ~= 10 and game.PlaceId == B then
        task.spawn(function()
            while IsAlive() do
                local cA = e.MissionObjects:WaitForChild('WaveStarter', math.huge)
@@ -2979,17 +2979,19 @@ for aA, B in pairs(Z) do
                wait()
            end
        end)
+       
        e.MissionObjects.ChildAdded:Connect(function(cB)
            if cB.Name == 'MinibossExitModel' then
                wait(2)
                e.MissionObjects.MinibossExitModel:MoveTo(J.Position)
            end
        end)
+       
        e.MissionObjects.ChildAdded:Connect(function(cC)
            if cC.Name == 'MinibossExit' then
                wait(3)
-               AutoFarm.State = false;
-               e.MissionObjects.MinibossExit.CFrame = J.CFrame;
+               AutoFarm.State = false
+               e.MissionObjects.MinibossExit.CFrame = J.CFrame
                wait()
                aK()
                AutoFarm.State = true
