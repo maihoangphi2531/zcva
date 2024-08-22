@@ -1,7 +1,7 @@
 
 
 local function improveFPS()
-    local decalsyeeted = true -- zxczxcsszxczxczxc222
+    local decalsyeeted = true -- zxczxcsszxczxczxc222s
     local game = game
     local workspace = game.Workspace
     local lighting = game.Lighting
