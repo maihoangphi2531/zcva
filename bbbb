@@ -1,7 +1,7 @@
 
 
 local function improveFPS()
-   local decalsyeeted = true -- zxczxcsszxczxczxc
+   local decalsyeeted = true -- zxczxcsszxczxczxcxxxxxxxxxxxxxxxxxxxxxxxx
    local game = game
    local workspace = game.Workspace
    local lighting = game.Lighting
@@ -1881,11 +1881,11 @@ local function bi(aW)
         if crystal and crystal.HealthProperties.Health.Value ~= 0 then
             aW = e.Mobs.Crystal.Crystal  -- Nếu điều kiện đúng, mục tiêu là Crystal
         else
-            aW = e.BOSSKandrix.Collider  -- Nếu Crystal không hợp lệ, mục tiêu là Collider
+            aW = e.Mobs.BOSSKandrix.Collider  -- Nếu Crystal không hợp lệ, mục tiêu là Collider
         end
     else
         -- Nếu điều kiện MissionObjective không đúng, mục tiêu là Collider
-        aW = e.BOSSKandrix.Collider
+        aW = e.Mobs.BOSSKandrix.Collider
     end
 
     return aW  -- Trả về giá trị của aW (Crystal hoặc Collider)
