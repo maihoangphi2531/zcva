@@ -1,7 +1,7 @@
 
 
 local function improveFPS()
-   local decalsyeeted = true -- zxczxcsszxczxczxc
+   local decalsyeeted = true -- zx
    local game = game
    local workspace = game.Workspace
    local lighting = game.Lighting
@@ -1877,11 +1877,12 @@ local function bi(aW)
     -- Kiểm tra điều kiện MissionObjective
     if H.PlayerGui.MissionObjective.MissionObjective.Label.Text == 'Destroy the crystals!' then
         -- Kiểm tra nếu Crystal tồn tại và có thể tấn công
-        if e.Mobs.Crystal:FindFirstChild('HealthProperties') and 
-           e.Mobs.Crystal.HealthProperties.Health.Value ~= 0 then
-            aW = e.Mobs.Crystal.Crystal  -- Nếu điều kiện đúng, mục tiêu là Crystal
+        if e.Mobs:FindFirstChild("Crystal") and 
+           e.Mobs.Crystal:FindFirstChild("HealthProperties") and 
+           e.Mobs.Crystal.HealthProperties.Health.Value > 0 then
+            aW = e.Mobs.Crystal.Crystal  -- Nếu Crystal còn tồn tại và chưa bị tiêu diệt
         else
-            aW = e.Mobs.BOSSKandrix.Collider  -- Nếu Crystal không hợp lệ, mục tiêu là Collider
+            aW = e.Mobs.BOSSKandrix.Collider  -- Nếu Crystal đã bị tiêu diệt hoặc không tồn tại
         end
     else
         -- Nếu điều kiện MissionObjective không đúng, mục tiêu là Collider
