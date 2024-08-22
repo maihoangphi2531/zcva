@@ -1,7 +1,7 @@
 
 
 local function improveFPS()
-    local decalsyeeted = true -- zxczxcsszxczxczxc222xxxxxx
+    local decalsyeeted = true -- zxczxcsszxczxczxc222
     local game = game
     local workspace = game.Workspace
     local lighting = game.Lighting
@@ -2885,7 +2885,7 @@ local function improveFPS()
         end
     end)
  end
- if game.PlaceId == Y[10] then
+ if game.PlaceId == Z[10] then
     e.ChildAdded:Connect(function(cx)
         if cx.Name == 'Crystal' then
             wait(5)
