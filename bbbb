@@ -1,7 +1,7 @@
 
 
 local function improveFPS()
-   local decalsyeeted = true -- zxczxcsszxczxczxcaaaaaaaaaa
+   local decalsyeeted = true -- zxczxcsszxczxczxc
    local game = game
    local workspace = game.Workspace
    local lighting = game.Lighting
@@ -1877,7 +1877,7 @@ local function bi(aW)
        if H.PlayerGui.MissionObjective.MissionObjective.Label.Text == 'Destroy the crystals!' then
            if e.Mobs.Crystal:FindFirstChild('HealthProperties') and
                e.Mobs.Crystal.HealthProperties.Health.Value ~= 0 then
-               aW = e.Mobs.Crystal.Part
+               aW = e.Mobs.Crystal.Crystal
            end
        end
        
