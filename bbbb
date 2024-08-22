@@ -1,7 +1,7 @@
 
 
 local function improveFPS()
-    local decalsyeeted = true -- zxczxcsszxczxczxc2224
+    local decalsyeeted = true -- zxczxcsszxczxczxc222xxxxxx
     local game = game
     local workspace = game.Workspace
     local lighting = game.Lighting
@@ -2889,7 +2889,7 @@ local function improveFPS()
     e.ChildAdded:Connect(function(cx)
         if cx.Name == 'Crystal' then
             wait(5)
-            J.CFrame = e.IceWall:FindFirstChild('Ring').CFrame
+            J.CFrame = workspace.BOSSKandrixAssets:GetChildren()[3].CFrame
         end
     end)
  local function cy()
